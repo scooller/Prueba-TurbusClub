@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<title>TurClub</title>
+	
+	<meta property="og:url"                content="localhost" />
+	<meta property="og:type"               content="article" />
+	<meta property="og:title"              content="TurClub" />
+	<meta property="og:description"        content="!Acumula puntos mientras viajas y sigue viajando!" />
+	<meta property="og:image"              content="img/personas.png" />
+	
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@clubturbus" />
+	<meta name="twitter:creator" content="@clubturbus" />
+	<meta property="og:url" content="localhost" />
+	<meta property="og:title" content="TurClub" />
+	<meta property="og:description" content="!Acumula puntos mientras viajas y sigue viajando!" />
+	<meta property="og:image" content="img/personas.png" />
+</head>
+
+<body>
+	<div id="load" class="d-flex justify-content-center align-items-center"><img src="img/loader-logo.jpg"></div>
+	<nav>
+		<div class="cont d-flex align-items-center">
+			<img src="img/logo.svg" class="logo mr-auto">
+			<button type="button" data-toggle="modal" data-target="#shareModal" class="btn btn-none"><img src="img/share.svg"></button>
+		</div>
+	</nav>
+	<div id="cont" class="cont">
+		<img src="img/personas.png" class="img-fluid">
+		<p class="txt1">Conoce nuestro programa de viajero frecuente y recibe beneficios de verdad</p>
+		<hr>
+		<img src="img/logos.jpg" class="logos img-fluid">
+		<hr>
+		<p class="txt2">Inscribete en TurClub, obtén beneficios especiales, descuentos y mucho más!</p>
+		
+		<a href="https://club.turbus.cl/" target="_blank" class="btn boton">Ir a TurClub</a>
+		
+		<p class="txt3">Nuestros destinos en el programa de viajero frecuente</p>
+		<!--
+		  __  __                   
+		 |  \/  |                  
+		 | \  / | __ _ _ __   __ _ 
+		 | |\/| |/ _` | '_ \ / _` |
+		 | |  | | (_| | |_) | (_| |
+		 |_|  |_|\__,_| .__/ \__,_|
+					  | |          
+					  |_|          
+		-->
+		<div id="mapa">
+			<div class="row">
+				<div class="col-4">
+					<div class="card">
+						<div class="card-header">
+						<h4>Seleccionar Destino</h4>
+						</div>
+						<ul class="list-group">
+							<!--<li class="list-group-item"><label><input type="checkbox" checked><span>Título CES 1</span></label></li>
+							<li class="list-group-item"><label><input type="checkbox"><span>Título CES 1</span></label></li>-->
+						</ul>
+					</div>
+				</div>
+				<div class="col-8">
+					<div id="map"></div>
+				</div>
+			</div>
+		</div>	
+		<!-- // -->
+	</div>
+	<footer>
+		<div class="cont row align-items-center">
+			<div class="col">
+				<img src="img/logo.svg" class="logo">
+			</div>
+			<div class="w-100"></div>
+			<div class="col">				
+				<p>Empresa de Transportes Rurales Ltda.</p>
+				<ul class="list-unstyled">
+					<li><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Dirección: <a href="https://www.google.cl/maps/place/Jesus+Diez+Martinez+800,+Estaci%C3%B3n+Central,+Regi%C3%B3n+Metropolitana/" target="_blank">Jesús Diez Martínez 800,<br>
+					Estación Central, Santiago de Chile.</a></li>
+					<li><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;&nbsp;Teléfono <a href="tel:+56228227500" target="_blank">228227500</a></li>
+					<li><i class="fas fa-envelope"></i>&nbsp;&nbsp;Email: <a href="mailto:atencion_clientes@turbus.cl" target="_blank">atencion_clientes@turbus.cl</a></li>
+				</ul>
+			</div>
+			<div class="col">
+				<p>Más sobre Tur Bus Ltda.</p>
+				<ul class="list-unstyled">
+					<li>Historia</li>
+					<li>Trabaje con nosotros</li>
+					<li>Condiciones</li>
+				</ul>
+			</div>
+			<div class="col">
+				<p>Más sobre Tur Bus Ltda.</p>
+				<ul class="list-unstyled">
+					<li>Venta de Pasajes</li>
+					<li>Aeropuerto</li>
+					<li>Arriendo de buses</li>
+					<li>Recarga de celular</li>
+					<li>Venta de buses</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<!--
+	Share modal
+	-->
+	<div class="modal" id="shareModal" tabindex="-1" role="dialog">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title">Compartir</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			  <div class="list-group">
+				  <button class="btn btn-primary" data-sharer="twitter" data-title="Compartir" data-hashtags="club,viajes" data-url="localhost">Twitter</button>
+				  <button class="btn btn-primary" data-sharer="facebook" data-hashtag="hashtag" data-url="localhost">Facebook</button>
+				  <button class="button" data-sharer="linkedin" data-url="localhost">Linkedin</button>
+				  <button class="button" data-sharer="whatsapp" data-title="Turbus Club" data-url="localhost">Whatsapp</button>
+			  </div>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<!-- // -->
+	
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
+	<script src="//cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="//stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/sharer.js/0.4.0/sharer.min.js" crossorigin="anonymous"></script>
+	<link href="//fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/fontawesome.min.css" rel="stylesheet">
+	<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/solid.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" />
+	
+	<script>
+      var map;
+      function initMap() {
+		  map = new google.maps.Map(document.getElementById('map'), {
+			  center: {lat: -33.4724228, lng: -70.7699137},
+			  zoom: 10
+		  });
+		  loadConse();
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-KZUgvmVuc3p9iyv_lmtGmhMMessaX6I&callback=initMap"
+    async defer></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>
